@@ -1,6 +1,6 @@
 {
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
-    "npmScope": "laager-bbb-voting-system",
+    "npmScope": "bbb-voting-system",
     "namedInputs": {
         "default": ["{projectRoot}/**/*", "sharedGlobals"],
         "production": [

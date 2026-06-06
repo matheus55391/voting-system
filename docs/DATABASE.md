@@ -395,7 +395,7 @@ datasource db {
 **Variável de Ambiente**:
 
 ```bash
-DATABASE_URL="postgresql://laager:laager@localhost:5432/laager_bbb_voting_db"
+DATABASE_URL="postgresql://voting_user:voting_password@localhost:5432/voting_db"
 ```
 
 ### `package.json` - Scripts

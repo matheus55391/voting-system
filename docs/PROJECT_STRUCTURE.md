@@ -9,7 +9,7 @@ O projeto utiliza **Nx Monorepo** com estrutura modular separando frontend, back
 ## 🌳 Árvore de Diretórios
 
 ```
-laager-bbb-voting-system/
+voting-system/
 │
 ├── apps/                           # Aplicações
 │   ├── api/                        # Backend (microserviços)
@@ -34,7 +34,7 @@ laager-bbb-voting-system/
 │   ├── PROJECT_STRUCTURE.md        # Este arquivo
 │   ├── DATABASE.md                 # Prisma e schema
 │   ├── LIBS.md                     # Libs compartilhadas
-│   └── LAAGER_REQUIREMENTS_COMPLETE.md
+│   └── TECHNICAL_CHALLENGE_REQUIREMENTS.md
 │
 ├── docker-compose.yml              # Infraestrutura
 ├── nx.json                         # Configuração Nx
@@ -420,7 +420,7 @@ model Vote {
 {
     "compilerOptions": {
         "paths": {
-            "@laager-bbb-voting-system/common": ["libs/common/src/index.ts"]
+            "@voting-system/common": ["libs/common/src/index.ts"]
         }
     }
 }
@@ -429,7 +429,7 @@ model Vote {
 **Path Alias**: Permite importar DTOs com:
 
 ```typescript
-import { VoteDto } from '@laager-bbb-voting-system/common';
+import { VoteDto } from '@voting-system/common';
 ```
 
 ### `docker-compose.yml`
@@ -462,7 +462,7 @@ import { Injectable } from '@nestjs/common';
 import { MessagePattern } from '@nestjs/microservices';
 
 // 2. Internal libs
-import { VoteDto } from '@laager-bbb-voting-system/common';
+import { VoteDto } from '@voting-system/common';
 
 // 3. Local imports
 import { PrismaService } from './prisma.service';
@@ -499,7 +499,7 @@ Database Tables: 2
 2. **Configurar projeto**: Execute `npm run setup`
 3. **Ver database**: Leia `docs/DATABASE.md`
 4. **Entender libs**: Leia `docs/LIBS.md`
-5. **Requisitos Laager**: Leia `docs/LAAGER_REQUIREMENTS_COMPLETE.md`
+5. **Requisitos do Desafio Técnico**: Leia `docs/TECHNICAL_CHALLENGE_REQUIREMENTS.md`
 
 ---
 

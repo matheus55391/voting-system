@@ -3,7 +3,7 @@
 ## 📋 Índice
 
 -   [Visão Geral](#-visão-geral)
--   [Requisitos do Desafio Laager](#-requisitos-do-desafio-laager) → [📄 LAAGER_REQUIREMENTS_COMPLETE.md](./LAAGER_REQUIREMENTS_COMPLETE.md)
+-   [Requisitos do Desafio Técnico](#-requisitos-do-desafio-técnico) → [📄 TECHNICAL_CHALLENGE_REQUIREMENTS.md](./TECHNICAL_CHALLENGE_REQUIREMENTS.md)
 -   [Arquitetura](#-arquitetura) → [🏗️ ARCHITECTURE.md](./ARCHITECTURE.md)
 -   [Como Executar](#-como-executar)
 -   [Testes](#-testes)
@@ -15,7 +15,8 @@
 
 ## 🎯 Visão Geral
 
-Sistema de votação completo para o paredão do BBB com:
+Projeto de portfólio baseado em um **desafio técnico genérico** de sistema de votação para o paredão do BBB:
+
 
 -   ✅ **2 participantes** em votação (João Silva vs Maria Santos)
 -   ✅ **Votos ilimitados** por usuário
@@ -28,7 +29,7 @@ Sistema de votação completo para o paredão do BBB com:
 
 ---
 
-## 🚀 Requisitos do Desafio Laager
+## 🚀 Requisitos do Desafio Técnico
 
 ### ✅ **100% IMPLEMENTADO**
 
@@ -140,8 +141,8 @@ Voto 11+:    ❌ HTTP 429 "Aguarde X segundos"
 
 ```bash
 # 1. Clonar repositório
-git clone https://github.com/matheus55391/laager-bbb-voting-system.git
-cd laager-bbb-voting-system
+git clone https://github.com/matheus55391/voting-system.git
+cd voting-system
 
 # 2. Instalar dependências
 npm install
@@ -166,7 +167,7 @@ npm run start:all
 
 -   **Frontend**: http://localhost:4200
 -   **API Swagger**: http://localhost:3000/api
--   **RabbitMQ Management**: http://localhost:15672 (laager_user / laager_password)
+-   **RabbitMQ Management**: http://localhost:15672 (voting_user / voting_password)
 
 ### Scripts Disponíveis
 
@@ -262,7 +263,7 @@ curl http://localhost:3000/api/votes | jq
 npm run prisma:studio
 
 # Ou via SQL:
-docker exec -it laager-postgres psql -U laager_user -d laager_voting
+docker exec -it voting-postgres psql -U voting_user -d voting_db
 
 # Query:
 SELECT
@@ -281,7 +282,7 @@ LIMIT 10;
 ## 📁 Estrutura do Projeto
 
 ```
-laager-bbb-voting-system/
+voting-system/
 ├── apps/
 │   ├── api/
 │   │   ├── api-gateway/              # API REST (porta 3000)
@@ -414,7 +415,7 @@ laager-bbb-voting-system/
 -   **[📁 PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md)** - Estrutura completa do monorepo, organização de pastas e convenções
 -   **[🗄️ DATABASE.md](./DATABASE.md)** - Schema Prisma, models, migrations, queries e estratégias de cache
 -   **[📦 LIBS.md](./LIBS.md)** - DTOs compartilhados, validações e como usar a lib common
--   **[📄 LAAGER_REQUIREMENTS_COMPLETE.md](./LAAGER_REQUIREMENTS_COMPLETE.md)** - Checklist completo dos requisitos Laager
+-   **[📄 TECHNICAL_CHALLENGE_REQUIREMENTS.md](./TECHNICAL_CHALLENGE_REQUIREMENTS.md)** - Checklist completo dos requisitos do desafio técnico
 
 ---
 
@@ -440,7 +441,7 @@ laager-bbb-voting-system/
 
 ## 🎯 Conclusão
 
-O sistema atende **100% dos requisitos do desafio Laager**:
+O sistema atende **100% dos requisitos do desafio técnico**:
 
 ✅ Sistema Web funcional
 ✅ API REST documentada
@@ -450,8 +451,6 @@ O sistema atende **100% dos requisitos do desafio Laager**:
 ✅ **Performance 1000 votos/segundo**
 ✅ **Todos os 3 endpoints exigidos**
 
-**Pronto para apresentação aos avaliadores!** 🚀
-
 ---
 
 ## 📞 Contato
@@ -459,4 +458,4 @@ O sistema atende **100% dos requisitos do desafio Laager**:
 **Matheus**
 
 -   GitHub: [@matheus55391](https://github.com/matheus55391)
--   Repositório: [laager-bbb-voting-system](https://github.com/matheus55391/laager-bbb-voting-system)
+-   Repositório: [voting-system](https://github.com/matheus55391/voting-system)

@@ -5,7 +5,7 @@ import {
     VoteResponseDto,
     ResultsResponseDto,
     HourlyStatsResponseDto,
-} from '@laager-bbb-voting-system/common';
+} from '@bbb-voting-system/common';
 import { VotesService } from './services/votes.service';
 
 @Controller()

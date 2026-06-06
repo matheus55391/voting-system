@@ -7,7 +7,7 @@ import {
     ParticipantResult,
     HourlyStatsResponseDto,
     HourlyStatsDto,
-} from '@laager-bbb-voting-system/common';
+} from '@bbb-voting-system/common';
 import { PrismaService } from './prisma.service';
 import { RedisService } from './redis.service';
 

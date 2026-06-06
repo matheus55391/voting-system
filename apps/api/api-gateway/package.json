@@ -1,5 +1,5 @@
 {
-    "name": "@laager-bbb-voting-system/api-gateway",
+    "name": "@bbb-voting-system/api-gateway",
     "version": "0.0.1",
     "private": true,
     "nx": {

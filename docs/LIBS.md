@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-A biblioteca `@laager-bbb-voting-system/common` centraliza **DTOs**, **interfaces** e **tipos** compartilhados entre os serviços.
+A biblioteca `@bbb-voting-system/common` centraliza **DTOs**, **interfaces** e **tipos** compartilhados entre os serviços.
 
 **Propósito**: Evitar duplicação de código e garantir consistência de tipos entre API Gateway, Vote Service e Web Frontend.
 
@@ -62,7 +62,7 @@ export * from './lib/participant/interfaces/participant.interface';
 **Uso**: Permite importar qualquer DTO com:
 
 ```typescript
-import { VoteDto, VoteResponseDto } from '@laager-bbb-voting-system/common';
+import { VoteDto, VoteResponseDto } from '@bbb-voting-system/common';
 ```
 
 ---
@@ -359,7 +359,7 @@ export interface IParticipant {
 
 ```typescript
 // Frontend - apps/web/src/types/participant.ts
-import { IParticipant } from '@laager-bbb-voting-system/common';
+import { IParticipant } from '@bbb-voting-system/common';
 
 export type Participant = IParticipant & {
     nickname?: string;
@@ -379,7 +379,7 @@ export type Participant = IParticipant & {
 {
     "compilerOptions": {
         "paths": {
-            "@laager-bbb-voting-system/common": ["libs/common/src/index.ts"]
+            "@bbb-voting-system/common": ["libs/common/src/index.ts"]
         }
     }
 }
@@ -392,7 +392,7 @@ export type Participant = IParticipant & {
 import { VoteDto } from '../../../libs/common/src/lib/vote/dto/vote.dto';
 
 // Usar:
-import { VoteDto } from '@laager-bbb-voting-system/common';
+import { VoteDto } from '@bbb-voting-system/common';
 ```
 
 ---
@@ -402,7 +402,7 @@ import { VoteDto } from '@laager-bbb-voting-system/common';
 ### 1. No API Gateway (NestJS)
 
 ```typescript
-import { VoteDto, VoteResponseDto } from '@laager-bbb-voting-system/common';
+import { VoteDto, VoteResponseDto } from '@bbb-voting-system/common';
 
 @Controller('votes')
 export class VotesController {
@@ -416,7 +416,7 @@ export class VotesController {
 ### 2. No Vote Service (NestJS Microservice)
 
 ```typescript
-import { VoteDto, VoteResponseDto } from '@laager-bbb-voting-system/common';
+import { VoteDto, VoteResponseDto } from '@bbb-voting-system/common';
 
 @Controller()
 export class AppController {
@@ -430,7 +430,7 @@ export class AppController {
 ### 3. No Frontend (Next.js)
 
 ```typescript
-import { ResultsResponseDto } from '@laager-bbb-voting-system/common';
+import { ResultsResponseDto } from '@bbb-voting-system/common';
 
 export const votingApi = {
     async getResults(): Promise<ResultsResponseDto> {
@@ -617,10 +617,10 @@ export * from './lib/vote/dto/vote.dto';
 
 ```typescript
 // ❌ Não fazer:
-import { VoteDto } from '@laager-bbb-voting-system/common/lib/vote/dto/vote.dto';
+import { VoteDto } from '@bbb-voting-system/common/lib/vote/dto/vote.dto';
 
 // ✅ Fazer:
-import { VoteDto } from '@laager-bbb-voting-system/common';
+import { VoteDto } from '@bbb-voting-system/common';
 ```
 
 ---
@@ -630,7 +630,7 @@ import { VoteDto } from '@laager-bbb-voting-system/common';
 ### Unit Test (Jest)
 
 ```typescript
-import { VoteDto } from '@laager-bbb-voting-system/common';
+import { VoteDto } from '@bbb-voting-system/common';
 
 describe('VoteDto', () => {
     it('should validate participantId', () => {
@@ -661,7 +661,7 @@ nx build common
 // package.json
 {
   "dependencies": {
-    "@laager-bbb-voting-system/common": "file:./dist/libs/common"
+    "@bbb-voting-system/common": "file:./dist/libs/common"
   }
 }
 ```
@@ -670,7 +670,7 @@ nx build common
 
 ## 🚨 Troubleshooting
 
-### Erro: "Cannot find module '@laager-bbb-voting-system/common'"
+### Erro: "Cannot find module '@bbb-voting-system/common'"
 
 **Solução**:
 

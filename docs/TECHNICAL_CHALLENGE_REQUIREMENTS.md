@@ -1,4 +1,6 @@
-# 🚨 Requisitos Laager - Implementação Completa
+# 📋 Requisitos do Desafio Técnico - Implementação Completa
+
+> Especificação genérica de um desafio técnico para construção de um sistema de votação em tempo real.
 
 ## ✅ Status Final: 100% DOS REQUISITOS ATENDIDOS
 
@@ -261,7 +263,7 @@ http://localhost:3000/api
 
 ## 📊 Comparação Final
 
-| Requisito Laager    | Antes               | Depois                         |
+| Requisito           | Antes               | Depois                         |
 | ------------------- | ------------------- | ------------------------------ |
 | **Anti-bot**        | ❌ Apenas TODO      | ✅ Rate limiting + IP tracking |
 | **Votos por hora**  | ❌ Não existia      | ✅ GET /votes/stats/hourly     |
@@ -274,7 +276,7 @@ http://localhost:3000/api
 
 ## 🎯 Conclusão
 
-### ✅ **TODOS OS REQUISITOS DO DESAFIO LAAGER FORAM IMPLEMENTADOS**
+### ✅ **TODOS OS REQUISITOS DO DESAFIO TÉCNICO FORAM IMPLEMENTADOS**
 
 1. ✅ Sistema Web com HTML/CSS/JavaScript
 2. ✅ API REST documentada no Swagger
@@ -286,9 +288,9 @@ http://localhost:3000/api
 8. ✅ **Total por participante** (GET /votes)
 9. ✅ **Total de votos por hora** (GET /votes/stats/hourly)
 
-### 🚀 Pronto para Apresentação!
+### 🚀 Implementação Completa
 
-O sistema agora está **100% completo** conforme especificação do desafio Laager e pronto para ser apresentado aos avaliadores.
+O sistema está **100% completo** conforme a especificação do desafio técnico de sistema de votação.
 
 ### 📈 Diferenciais Implementados
 

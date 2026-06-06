@@ -3,7 +3,7 @@ import {
     VoteDto,
     VoteResponseDto,
     HourlyStatsResponseDto,
-} from '@laager-bbb-voting-system/common';
+} from '@bbb-voting-system/common';
 import {
     Body,
     Controller,

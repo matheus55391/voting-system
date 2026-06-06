@@ -215,7 +215,7 @@
     <rect x="50" y="520" width="660" height="100" rx="10" fill="url(#grad-infrastructure)" stroke="#718096"
         stroke-width="2" />
     <text x="380" y="545" text-anchor="middle" class="subtitle" fill="#4a5568">Shared Library
-        (@laager-bbb-voting-system/common)</text>
+        (@bbb-voting-system/common)</text>
     <text x="380" y="570" text-anchor="middle" class="small-text">DTOs: VoteDto • VoteResponseDto • ResultsResponseDto •
         HourlyStatsDto</text>
     <text x="380" y="585" text-anchor="middle" class="small-text">Interfaces: Participant • Vote • Stats</text>

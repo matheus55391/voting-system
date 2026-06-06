@@ -1,6 +1,6 @@
 # 🗳️ BBB Voting System
 
-Sistema de votação completo para o paredão do Big Brother Brasil, desenvolvido com arquitetura de microserviços escalável.
+Sistema de votação completo para o paredão do Big Brother Brasil, desenvolvido como **desafio técnico** com arquitetura de microserviços escalável.
 
 [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)](https://nestjs.com)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org)
@@ -20,7 +20,7 @@ Sistema de votação em tempo real para o paredão do BBB com:
 -   ✅ **API REST completa** com documentação Swagger
 -   ✅ **Estatísticas em tempo real** (total geral, por participante e por hora)
 
-### 🎯 Requisitos do Desafio Laager
+### 🎯 Requisitos do Desafio Técnico
 
 | Requisito                  | Implementação                            |
 | -------------------------- | ---------------------------------------- |
@@ -34,7 +34,7 @@ Sistema de votação em tempo real para o paredão do BBB com:
 | **Total por participante** | ✅ **GET /votes**                        |
 | **Total por hora**         | ✅ **GET /votes/stats/hourly**           |
 
-**[📋 Ver checklist completo dos requisitos](./docs/LAAGER_REQUIREMENTS_COMPLETE.md)**
+**[📋 Ver checklist completo dos requisitos](./docs/TECHNICAL_CHALLENGE_REQUIREMENTS.md)**
 
 ---
 
@@ -50,8 +50,8 @@ Sistema de votação em tempo real para o paredão do BBB com:
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/matheus55391/laager-bbb-voting-system.git
-cd laager-bbb-voting-system
+git clone https://github.com/matheus55391/voting-system.git
+cd voting-system
 
 # 2. Execute o script de setup
 npm run setup
@@ -76,7 +76,7 @@ npm run start:all
 
 -   **Frontend**: http://localhost:4200
 -   **API Swagger**: http://localhost:3000/api
--   **RabbitMQ Management**: http://localhost:15672 (usuário: `laager_user` / senha: `laager_password`)
+-   **RabbitMQ Management**: http://localhost:15672 (usuário: `voting_user` / senha: `voting_password`)
 
 ---
 
@@ -139,7 +139,7 @@ O sistema utiliza uma **arquitetura de microserviços event-driven** com foco em
 -   **[📁 Estrutura do Projeto](./docs/PROJECT_STRUCTURE.md)** - Organização de pastas e arquivos
 -   **[🗄️ Database & Prisma](./docs/DATABASE.md)** - Schema, models e migrations
 -   **[📦 Libs & DTOs](./docs/LIBS.md)** - Biblioteca compartilhada e DTOs
--   **[✅ Requisitos Laager](./docs/LAAGER_REQUIREMENTS_COMPLETE.md)** - Checklist completo do desafio
+-   **[✅ Requisitos do Desafio Técnico](./docs/TECHNICAL_CHALLENGE_REQUIREMENTS.md)** - Checklist completo do desafio
 
 ---
 
@@ -190,7 +190,7 @@ npm run docker:logs    # Ver logs
 ## 📦 Estrutura do Projeto
 
 ```
-laager-bbb-voting-system/
+voting-system/
 ├── apps/
 │   ├── api/
 │   │   ├── api-gateway/      # API REST (porta 3000)
@@ -368,8 +368,8 @@ MIT License - veja [LICENSE](LICENSE) para detalhes.
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/matheus55391/laager-bbb-voting-system.git
-cd laager-bbb-voting-system
+git clone https://github.com/matheus55391/voting-system.git
+cd voting-system
 
 # 2. Instale as dependências
 npm install
@@ -391,7 +391,7 @@ npm run start:all        # API Gateway + Vote Service + Frontend
 -   Frontend: http://localhost:4200
 -   API Gateway: http://localhost:3000
 -   Swagger: http://localhost:3000/api
--   RabbitMQ UI: http://localhost:15672 (user: laager_user, pass: laager_password)
+-   RabbitMQ UI: http://localhost:15672 (user: voting_user, pass: voting_password)
 
 ---
 
@@ -430,19 +430,19 @@ npm run start:web
 -   🌐 **Frontend**: http://localhost:4200
 -   🔌 **API**: http://localhost:3000/api
 -   📚 **Swagger**: http://localhost:3000/api/docs
--   🐰 **RabbitMQ Management**: http://localhost:15672 (laager_user / laager_password)
+-   🐰 **RabbitMQ Management**: http://localhost:15672 (voting_user / voting_password)
 
 ## 📚 Documentação
 
 Documentação completa e consolidada:
 
 -   **[📖 docs/README.md](./docs/README.md)** - Documentação completa com arquitetura, setup, testes e estrutura
--   **[✅ docs/LAAGER_REQUIREMENTS_COMPLETE.md](./docs/LAAGER_REQUIREMENTS_COMPLETE.md)** - Checklist dos requisitos do desafio Laager
+-   **[✅ docs/TECHNICAL_CHALLENGE_REQUIREMENTS.md](./docs/TECHNICAL_CHALLENGE_REQUIREMENTS.md)** - Checklist dos requisitos do desafio técnico
 
 ## 📁 Estrutura do Projeto
 
 ```
-laager-bbb-voting-system/
+voting-system/
 ├── apps/
 │   ├── api/                      # Backend - Microserviços
 │   │   ├── api-gateway/          # REST API (porta 3000)
@@ -539,7 +539,7 @@ npm run test:cov
 npm run test:e2e
 ```
 
-## ✅ Checklist de Requisitos Laager
+## ✅ Checklist de Requisitos do Desafio Técnico
 
 | Requisito                     | Status                            |
 | ----------------------------- | --------------------------------- |
@@ -554,7 +554,7 @@ npm run test:e2e
 | **Total por participante**    | ✅ **GET /votes**                 |
 | **Total por hora**            | ✅ **GET /votes/stats/hourly**    |
 
-**🎯 100% dos requisitos implementados!** Veja detalhes em [docs/LAAGER_REQUIREMENTS_COMPLETE.md](./docs/LAAGER_REQUIREMENTS_COMPLETE.md)
+**🎯 100% dos requisitos implementados!** Veja detalhes em [docs/TECHNICAL_CHALLENGE_REQUIREMENTS.md](./docs/TECHNICAL_CHALLENGE_REQUIREMENTS.md)
 
 ## 🤝 Contribuindo
 

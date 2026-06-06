@@ -18,7 +18,7 @@
         "paths": {
             "@api/aggregate-service/*": ["apps/api/aggregate-service/src/*"],
             "@bbvote/common": ["libs/src/index.ts"],
-            "@laager-bbb-voting-system/common": ["libs/common/src/index.ts"],
+            "@bbb-voting-system/common": ["libs/common/src/index.ts"],
             "@shared/*": ["libs/shared/src/*"],
             "@web/*": ["apps/web/src/*"]
         }

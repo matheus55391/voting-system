@@ -104,14 +104,14 @@ print_header "3/6 - Configurando Variáveis de Ambiente"
 if [ ! -f ".env" ]; then
     cat > .env << 'EOF'
 # Database
-DATABASE_URL="postgresql://laager_user:laager_password@localhost:5432/laager_voting?schema=public"
+DATABASE_URL="postgresql://voting_user:voting_password@localhost:5432/voting_db?schema=public"
 
 # Redis
 REDIS_HOST=localhost
 REDIS_PORT=6379
 
 # RabbitMQ
-RABBITMQ_URL=amqp://laager_user:laager_password@localhost:5672/laager_vhost
+RABBITMQ_URL=amqp://voting_user:voting_password@localhost:5672/voting_vhost
 
 # API Gateway
 PORT=3000
@@ -211,7 +211,7 @@ echo "2. Acessar as aplicações:"
 echo -e "   ${YELLOW}Frontend:${NC}          http://localhost:4200"
 echo -e "   ${YELLOW}API Swagger:${NC}       http://localhost:3000/api"
 echo -e "   ${YELLOW}RabbitMQ UI:${NC}       http://localhost:15672"
-echo -e "   ${YELLOW}                       (user: laager_user, pass: laager_password)${NC}"
+echo -e "   ${YELLOW}                       (user: voting_user, pass: voting_password)${NC}"
 echo ""
 
 echo "3. Comandos úteis:"

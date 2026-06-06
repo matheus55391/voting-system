@@ -22,12 +22,12 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug @laager-bbb-voting-system/votes-service with Nx",
+            "name": "Debug @bbb-voting-system/votes-service with Nx",
             "runtimeExecutable": "npx",
             "runtimeArgs": [
                 "nx",
                 "serve",
-                "@laager-bbb-voting-system/votes-service"
+                "@bbb-voting-system/votes-service"
             ],
             "env": {
                 "NODE_OPTIONS": "--inspect=9230"
@@ -44,12 +44,12 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug @laager-bbb-voting-system/aggregate-service with Nx",
+            "name": "Debug @bbb-voting-system/aggregate-service with Nx",
             "runtimeExecutable": "npx",
             "runtimeArgs": [
                 "nx",
                 "serve",
-                "@laager-bbb-voting-system/aggregate-service"
+                "@bbb-voting-system/aggregate-service"
             ],
             "env": {
                 "NODE_OPTIONS": "--inspect=9231"
